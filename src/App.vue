@@ -4,7 +4,12 @@
         <div v-for="post in posts" :key="post.id">
         <div class="warning_tt">
             <h2>{{ post.txt25 }}</h2>								
-        </div>        
+        </div>
+         <select v-model="selected" id="select">
+            <option v-for="option in options" v-bind:value="option.value" :key="option.value">
+                {{ option.text }}
+            </option>
+        </select>        
         <div class="clear"></div>        
             <div class="wan_title">
                 <span>{{ post.title }}</span>
