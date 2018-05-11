@@ -1,0 +1,44 @@
+[
+  {
+    "english":
+    {
+        "title": "Be sure to read the precautions before using MAGFORMERS.",
+	"txt01": "Do not place the product in water or fire.",
+	"txt02": "Never place the product in appliances using water, such as dishwashers and washing machines.",
+	"txt03": "Small parts are enclosed. Do not let children put parts in their mouth since there may be a risk of choking.",
+	"txt04": "If the magnet is detached from the product, be sure to collect the detached magnet and discard it immediately.",
+	"txt05": "If the magnet turns black or the coating is peeled off from incorrect storage of the product during the period of use, discard the product immediately.",
+	"txt06": "Do not wipe the product with chemicals, such as alcohol, thinner or detergent.",
+	"txt07": "Do not leave the product in a place with high humidity.",
+	"txt08": "Do not leave the product in direct sunlight, especially at high or low temperatures.",
+	"txt09": "Do not use disassembled, damaged or deformed parts for your safety. It may cause injury.",
+	"txt10": "If the product is used by a large number of people, such as at kindergartens, daycare centers and schools, check the condition of the magnets from time to time.",
+	"txt11": "Do not use the product outdoors.",
+	"txt12": "Do not drop the product or apply excessive shock.",
+	"li01": "Never stand on or step on the product.",
+	"li02": "Do not throw the product at people or other objects.",
+	"li03": "Be sure to use the product under the supervision of a guardian since there may be a risk of unexpected accidents.",
+	"li04": "If foreign matter such as sand or water enters the product, it may be damaged. Please use the product in a clean place.",
+	"li05": "Do not cut, disassemble or heat the product.",
+	"li06": "Keep the product away from fires.",
+	"li07": "If the product becomes dirty, wipe it with a dry towel.",
+	"li08": "Do not place the product in appliances using heat, such as a microwave or electric oven.",
+	"li09": "The product contains magnets. Keep it away from objects that are affected magnetically, such as TVs, watches, computers,  cellphones and portable storage devices. Malfunction may occur from magnetic force.",
+	"li10": "Remove all packaging before giving the product to children.",
+	"li11": "Some parts may have different shapes and colors to improve quality.",
+	"li12": "Colors and content may differ from the displayed items.",
+	"li13": "When the product is opened for the first time, it may have a plastic odor. But it is an internationally certified safe product.",
+	"wan01": "Warning",
+	"wan02": "CHOKING HAZARD – Small parts",
+	"wan03": "Not for children under 3 years. This products contain small magnets. Swallowed magnets can cause complications leading to serious infections and death. Seek immediate medical attention if magnets are swallowed or inhaled."	
+    },
+    "korean":
+    {
+        "title": "한국어입니다",
+    },
+    "japanese":
+    {
+        "title": "일본어",
+    }
+  }
+]
