@@ -3,7 +3,7 @@
     <div id="app">
         <div v-for="post in posts" :key="post.id">
         <div class="warning_tt">
-            <h2>{{ post.txt25 }}</h2>								
+            <h2 v-bind:class="selected">{{ post.txt25 }}</h2>								
         </div>
          <select v-model="selected" id="select">
             <option v-for="option in options" v-bind:value="option.value" :key="option.value">
@@ -12,10 +12,12 @@
         </select>        
         <div class="clear"></div>        
             <div class="wan_title">
-                <span>{{ post.title }}</span>
+                <div v-bind:class="selected">
+                    <span>{{ post.title }}</span>
+                </div>
             </div>
             <div class="wan_img_area">
-                <ul>
+                <ul v-bind:class="selected">
                     <li>
                         <div><img src="../src/assets/wan01.jpg" /></div>
                         <div>
@@ -91,7 +93,7 @@
                 </ul>
             </div>
             <div class="wan_list">
-                <ul>
+                <ul v-bind:class="selected">
                     <li>
                         <span>{{ post.txt13 }}</span> 
                     </li>
@@ -132,11 +134,15 @@
             </div>   
                     
             <div class="wan_box">
-                <div class="wan_box01">                    
-                    <span class="svg"><img src="/dist/ic_warning.svg"></span><span class="svg_title">{{ post.txt25 }}</span> 
+                <div class="wan_box01">
+                    <div v-bind:class="selected">                    
+                        <span class="svg"><img src="/dist/ic_warning.svg"></span><span class="svg_title">{{ post.txt25 }}</span>
+                    </div> 
                 </div>
                 <div class="wan_box03">
-                    <span>{{ post.txt26 }}</span> 
+                    <div v-bind:class="selected"> 
+                        <span>{{ post.txt26 }}</span> 
+                    </div>
                 </div>
             </div> 
         </div>
