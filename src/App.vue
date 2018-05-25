@@ -13,7 +13,7 @@
         <div class="clear"></div>  
             <div class="wan_title">
                 <div v-bind:class="selected">
-                    <span v-html="post.title">{{ post.title | nl2br }}</span>
+                    <span v-html="post.title">{{ post.title }}</span>
                 </div>
             </div>
             <div class="wan_img_area">
@@ -21,7 +21,7 @@
                     <li>
                         <div><img src="../src/assets/wan01.jpg" /></div>
                         <div>
-                            <span v-html="post.txt01">{{ post.txt01 | nl2br }}</span>                  
+                            <span v-html="post.txt01">{{ post.txt01 }}</span>                  
                         </div>
                     </li>
                     <li>
@@ -208,11 +208,11 @@ export default {
         this.errors.push(e)
     });    
   },
-  filters: {      
-     nl2br (value) {
-      return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
-    }
-  },
+//   filters: {      
+//      nl2br (value) {
+//       return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
+//     }
+//   },
   watch:{
     selected: function(data){
        axios.get('/json/language.asp?TP='+data)
