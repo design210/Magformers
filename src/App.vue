@@ -10,10 +10,10 @@
                 {{ option.text }}
             </option>
         </select>        
-        <div class="clear"></div>        
+        <div class="clear"></div>  
             <div class="wan_title">
                 <div v-bind:class="selected">
-                    <span>{{ post.title }}</span>
+                    <span v-html="post.title">{{ post.title | nl2br }}</span>
                 </div>
             </div>
             <div class="wan_img_area">
@@ -21,73 +21,73 @@
                     <li>
                         <div><img src="../src/assets/wan01.jpg" /></div>
                         <div>
-                            <span>{{ post.txt01 }}</span>                  
+                            <span v-html="post.txt01">{{ post.txt01 | nl2br }}</span>                  
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan02.jpg" /></div>
                         <div>
-                            <span>{{ post.txt02 }}</span> 
+                            <span v-html="post.txt02">{{ post.txt02 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan03.jpg" /></div>
                         <div>
-                            <span>{{ post.txt03 }}</span> 
+                            <span v-html="post.txt03">{{ post.txt03 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan04.jpg" /></div>
                         <div>
-                            <span>{{ post.txt04 }}</span> 
+                            <span v-html="post.txt04">{{ post.txt04 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan05.jpg" /></div>
                         <div>
-                           <span>{{ post.txt05 }}</span> 
+                           <span v-html="post.txt05">{{ post.txt05 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan06.jpg" /></div>
                         <div>
-                            <span>{{ post.txt06 }}</span> 
+                            <span v-html="post.txt06">{{ post.txt06 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan07.jpg" /></div>
                         <div>
-                            <span>{{ post.txt07 }}</span> 
+                            <span v-html="post.txt07">{{ post.txt07 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan08.jpg" /></div>
                         <div>
-                            <span>{{ post.txt08 }}</span> 
+                            <span v-html="post.txt08">{{ post.txt08 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan09.jpg" /></div>
                         <div>
-                            <span>{{ post.txt09 }}</span> 
+                            <span v-html="post.txt09">{{ post.txt09 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan10.jpg" /></div>
                         <div>
-                            <span>{{ post.txt10 }}</span> 
+                            <span v-html="post.txt10">{{ post.txt10 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan11.jpg" /></div>
                         <div>
-                            <span>{{ post.txt11 }}</span> 
+                            <span v-html="post.txt11">{{ post.txt11 }}</span> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan12.jpg" /></div>
                         <div>
-                            <span>{{ post.txt12 }}</span> 
+                            <span v-html="post.txt12">{{ post.txt12 }}</span> 
                         </div>
                     </li>
                 </ul>
@@ -95,40 +95,40 @@
             <div class="wan_list">
                 <ul v-bind:class="selected">
                     <li>
-                        <span>{{ post.txt13 }}</span> 
+                        <span v-html="post.txt13">{{ post.txt13 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt14 }}</span> 
+                        <span v-html="post.txt14">{{ post.txt14 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt15 }}</span> 
+                        <span v-html="post.txt15">{{ post.txt15 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt16 }}</span> 
+                        <span v-html="post.txt16">{{ post.txt16 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt17 }}</span> 
+                        <span v-html="post.txt17">{{ post.txt17 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt18 }}</span> 
+                        <span v-html="post.txt18">{{ post.txt18 }}</span> 
                     </li>
                     <li>
-                       <span>{{ post.txt19 }}</span> 
+                       <span v-html="post.txt19">{{ post.txt19 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt20 }}</span> 
+                        <span v-html="post.txt20">{{ post.txt20 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt21 }}</span> 
+                        <span v-html="post.txt21">{{ post.txt21 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt22 }}</span> 
+                        <span v-html="post.txt22">{{ post.txt22 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt23 }}</span> 
+                        <span v-html="post.txt23">{{ post.txt23 }}</span> 
                     </li>
                     <li>
-                        <span>{{ post.txt24 }}</span> 
+                        <span v-html="post.txt24">{{ post.txt24 }}</span> 
                     </li>                   
                 </ul>
             </div>   
@@ -136,12 +136,12 @@
             <div class="wan_box">
                 <div class="wan_box01">
                     <div v-bind:class="selected">                    
-                        <span class="svg"><img src="/dist/ic_warning.svg"></span><span class="svg_title">{{ post.txt25 }}</span>
+                        <span class="svg"><img src="/dist/ic_warning.svg"></span><span class="svg_title" v-html="post.txt25">{{ post.txt25 }}</span>
                     </div> 
                 </div>
                 <div class="wan_box03">
                     <div v-bind:class="selected"> 
-                        <span>{{ post.txt26 }}</span> 
+                        <span v-html="post.txt26">{{ post.txt26 }}</span> 
                     </div>
                 </div>
             </div> 
@@ -194,25 +194,29 @@ export default {
             { text: '한국어', value: 'Korean' }
         ]
     }
-  },
+  },   
   created() {
-    axios.get('/json/language.asp?TP=English')
-    //axios.get('http://jsonplaceholder.typicode.com/posts')
-    .then(response => {
-        // JSON responses are automatically parsed.
-        this.posts = response.data;
-        
+    axios({
+        meghod: 'get',
+        url: '/json/language.asp?TP=English'
+    })
+    .then(response => {       
+        this.posts = response.data;       
+        //this.posts[0].title=this.posts[0].title.replace(/(?:\r\n|\r|\n)/g, '<br />');       
     })
     .catch(e => {
         this.errors.push(e)
     });    
   },
+  filters: {      
+     nl2br (value) {
+      return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
+    }
+  },
   watch:{
     selected: function(data){
        axios.get('/json/language.asp?TP='+data)
-        //axios.get('http://jsonplaceholder.typicode.com/posts')
         .then(response => {
-            // JSON responses are automatically parsed.
             this.posts = response.data;
             
         })
