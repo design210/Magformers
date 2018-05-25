@@ -1,4 +1,3 @@
-
 <template>
     <div id="app">
         <div v-for="post in posts" :key="post.id">
@@ -13,7 +12,7 @@
         <div class="clear"></div>  
             <div class="wan_title">
                 <div v-bind:class="selected">
-                    <span v-html="post.title">{{ post.title | nl2br }}</span>
+                    <div v-html="this.$options.filters.nl2br(post.title)"></div>
                 </div>
             </div>
             <div class="wan_img_area">
@@ -202,17 +201,27 @@ export default {
     })
     .then(response => {       
         this.posts = response.data;       
+        console.log(response.data)
         //this.posts[0].title=this.posts[0].title.replace(/(?:\r\n|\r|\n)/g, '<br />');       
     })
     .catch(e => {
         this.errors.push(e)
     });    
   },
-  filters: {      
-     nl2br (value) {
-      return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
-    }
-  },
+   filters: {      
+      nl2br (value) {
+          console.log(value);
+          console.log(value.replace(/(?:\r\n|\r|\n)/g, '<br />'));
+       //return value.replace(/\n/g,'<br/>');
+          //console.log(value.replace(/\n/g,'<br/>'));
+       //return value.split('\n').join('<br />');
+        
+          //return value+'<br/> aaa';
+          return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
+       //return value.replace(/\n/g,'<br/>');
+       //return value.split('\n
+     }
+   },
   watch:{
     selected: function(data){
        axios.get('/json/language.asp?TP='+data)
