@@ -13,7 +13,7 @@
         <div class="clear"></div>  
             <div class="wan_title">
                 <div v-bind:class="selected">
-                    <span v-html="post.title">{{ post.title }}</span>
+                    <nl2br tag="span" :text=post.title />
                 </div>
             </div>
             <div class="wan_img_area">
@@ -21,73 +21,73 @@
                     <li>
                         <div><img src="../src/assets/wan01.jpg" /></div>
                         <div>
-                            <span v-html="post.txt01">{{ post.txt01 }}</span>                  
+                            <nl2br tag="span" :text=post.txt01 />                
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan02.jpg" /></div>
                         <div>
-                            <span v-html="post.txt02">{{ post.txt02 }}</span> 
+                            <nl2br tag="span" :text=post.txt02 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan03.jpg" /></div>
                         <div>
-                            <span v-html="post.txt03">{{ post.txt03 }}</span> 
+                            <nl2br tag="span" :text=post.txt03 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan04.jpg" /></div>
                         <div>
-                            <span v-html="post.txt04">{{ post.txt04 }}</span> 
+                            <nl2br tag="span" :text=post.txt04 />  
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan05.jpg" /></div>
                         <div>
-                           <span v-html="post.txt05">{{ post.txt05 }}</span> 
+                           <nl2br tag="span" :text=post.txt05 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan06.jpg" /></div>
                         <div>
-                            <span v-html="post.txt06">{{ post.txt06 }}</span> 
+                            <nl2br tag="span" :text=post.txt06 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan07.jpg" /></div>
                         <div>
-                            <span v-html="post.txt07">{{ post.txt07 }}</span> 
+                            <nl2br tag="span" :text=post.txt07 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan08.jpg" /></div>
                         <div>
-                            <span v-html="post.txt08">{{ post.txt08 }}</span> 
+                            <nl2br tag="span" :text=post.txt08 />  
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan09.jpg" /></div>
                         <div>
-                            <span v-html="post.txt09">{{ post.txt09 }}</span> 
+                            <nl2br tag="span" :text=post.txt09 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan10.jpg" /></div>
                         <div>
-                            <span v-html="post.txt10">{{ post.txt10 }}</span> 
+                            <nl2br tag="span" :text=post.txt10 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan11.jpg" /></div>
                         <div>
-                            <span v-html="post.txt11">{{ post.txt11 }}</span> 
+                            <nl2br tag="span" :text=post.txt11 /> 
                         </div>
                     </li>
                     <li>
                         <div><img src="../src/assets/wan12.jpg" /></div>
                         <div>
-                            <span v-html="post.txt12">{{ post.txt12 }}</span> 
+                            <nl2br tag="span" :text=post.txt12 /> 
                         </div>
                     </li>
                 </ul>
@@ -95,40 +95,40 @@
             <div class="wan_list">
                 <ul v-bind:class="selected">
                     <li>
-                        <span v-html="post.txt13">{{ post.txt13 }}</span> 
+                        <nl2br tag="span" :text=post.txt13 />  
                     </li>
                     <li>
-                        <span v-html="post.txt14">{{ post.txt14 }}</span> 
+                        <nl2br tag="span" :text=post.txt14 />  
                     </li>
                     <li>
-                        <span v-html="post.txt15">{{ post.txt15 }}</span> 
+                        <nl2br tag="span" :text=post.txt15 /> 
                     </li>
                     <li>
-                        <span v-html="post.txt16">{{ post.txt16 }}</span> 
+                        <nl2br tag="span" :text=post.txt16 />  
                     </li>
                     <li>
-                        <span v-html="post.txt17">{{ post.txt17 }}</span> 
+                        <nl2br tag="span" :text=post.txt17 />  
                     </li>
                     <li>
-                        <span v-html="post.txt18">{{ post.txt18 }}</span> 
+                        <nl2br tag="span" :text=post.txt18 />  
                     </li>
                     <li>
-                       <span v-html="post.txt19">{{ post.txt19 }}</span> 
+                       <nl2br tag="span" :text=post.txt19 />  
                     </li>
                     <li>
-                        <span v-html="post.txt20">{{ post.txt20 }}</span> 
+                        <nl2br tag="span" :text=post.txt20 />  
                     </li>
                     <li>
-                        <span v-html="post.txt21">{{ post.txt21 }}</span> 
+                        <nl2br tag="span" :text=post.txt21 />  
                     </li>
                     <li>
-                        <span v-html="post.txt22">{{ post.txt22 }}</span> 
+                        <nl2br tag="span" :text=post.txt22 /> 
                     </li>
                     <li>
-                        <span v-html="post.txt23">{{ post.txt23 }}</span> 
+                        <nl2br tag="span" :text=post.txt23 />  
                     </li>
                     <li>
-                        <span v-html="post.txt24">{{ post.txt24 }}</span> 
+                        <nl2br tag="span" :text=post.txt24 /> 
                     </li>                   
                 </ul>
             </div>   
@@ -136,12 +136,12 @@
             <div class="wan_box">
                 <div class="wan_box01">
                     <div v-bind:class="selected">                    
-                        <span class="svg"><img src="/dist/ic_warning.svg"></span><span class="svg_title" v-html="post.txt25">{{ post.txt25 }}</span>
+                        <span class="svg"><img src="/dist/ic_warning.svg"></span><nl2br  tag="span" :text=post.txt25 />
                     </div> 
                 </div>
                 <div class="wan_box03">
                     <div v-bind:class="selected"> 
-                        <span v-html="post.txt26">{{ post.txt26 }}</span> 
+                        <nl2br tag="span" :text=post.txt26 /> 
                     </div>
                 </div>
             </div> 
@@ -151,6 +151,7 @@
 
 <script>
 import axios from 'axios';
+import Nl2br from 'vue-nl2br';
 
 
 export default {
@@ -202,17 +203,14 @@ export default {
     })
     .then(response => {       
         this.posts = response.data;       
-        //this.posts[0].title=this.posts[0].title.replace(/(?:\r\n|\r|\n)/g, '<br />');       
     })
     .catch(e => {
         this.errors.push(e)
     });    
   },
-//   filters: {      
-//      nl2br (value) {
-//       return value.replace(/(?:\r\n|\r|\n)/g, '<br />');
-//     }
-//   },
+  components:{
+      'nl2br': Nl2br
+  },
   watch:{
     selected: function(data){
        axios.get('/json/language.asp?TP='+data)
